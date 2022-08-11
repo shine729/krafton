@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <title>크래프톤</title>
+</head>
+<script>
+  $(document).ready(function(){
+      $('#header').mouseenter(function(){
+        $('#header').addClass('header_on');
+    })
+
+    $('#header').mouseleave(function(){
+      $('#header').removeClass('header_on');
+    })
+
+    $('#header .container .site_lang li').on('click',function(){
+      $('#header .container .site_lang li').removeClass('on');
+      $(this).addClass('on');
+    });
+
+    $('.mobile_btn').on('click',function(){
+      $('.nav').toggleClass('on');
+      $('.mobile_btn').toggleClass('on');
+    });
+
+    var swiper = new Swiper(".myswiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev'
+                    }
+      });
+
+      var swiper = new Swiper(".myswiper2", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev'
+                    }
+      });
+
+       var swiper = new Swiper(".myswiper3", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev'
+                    }
+      });
+
+  });
+
+</script>
+<body>
+  <header id="header">
+    <div class="container clearfix">
+      <div class="header_inner">
+        <div class="logo">
+          <a href="#">
+            <img src="./images/logo-black.png" alt="로고">
+          </a>
+        </div>
+        <div class="mobile_btn only_mobile">
+            <span class="menu_txt">menu</span>
+              <span class="line"></span>
+              <span class="line"></span>
+        </div>
+        <div class="nav">
+          <ul>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Studios</a>
+            </li>
+            <li>
+              <a href="#">Games</a>
+            </li>
+            <li>
+              <a href="#">More <br class="only_mobile">experience</a>
+            </li>
+            <li>
+              <a href="#">Careers</a>
+            </li>
+            <li>
+              <a href="#">IR</a>
+            </li>
+            <li>
+              <a href="#">News</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav_list only_pc">
+          <ul class="sub_menu"></ul>
+          <ul class="sub_menu">
+            <li><a href="#">about</a></li>
+            <li><a href="#">크래프톤 이야기</a></li>
+            <li><a href="#">남겨온 흔적</a></li>
+            <li><a href="#">도전의 역사</a></li>
+            <li><a href="#">브랜드 리소스 센터</a></li>
+          </ul>
+          <ul class="sub_menu">
+            <li><a href="#">Studios</a></li>
+            <li><a href="#">펍지 스튜디오</a></li>
+            <li><a href="#">블루홀스튜디오</a></li>
+            <li><a href="#">라이징윙스</a></li>
+            <li><a href="#">스트라이킹 디스턴스 스튜디오</a></li>
+            <li><a href="#">드림모션</a></li>
+            <li><a href="#">언노운 월즈</a></li>
+            <li><a href="#">언노운 월즈</a></li>
+            <li><a href="#">5민랩</a></li>
+          </ul>
+          <ul class="sub_menu">
+            <li><a href="#">Games</a></li>
+            <li><a href="#">PUBG: 배틀그라운드</a></li>
+            <li><a href="#">뉴스테이트 모바일</a></li>
+            <li><a href="#">테라</a></li>
+            <li><a href="#">엘리온</a></li>
+            <li><a href="#">썬더 티어원</a></li>
+            <li><a href="#">미스트오버</a></li>
+            <li><a href="#">캐슬 크래프트</a></li>
+            <li><a href="#">골프킹: 월드투어</a></li>
+            <li><a href="#">볼링킹</a></li>
+            <li><a href="#">미니골프킹</a></li>
+            <li><a href="#">로닌: 더 라스트 사무라이</a></li>
+            <li><a href="#">로드 투 발러: 엠파이어스</a></li>
+            <li><a href="#">로드 투 발러: 월드워2</a></li>
+            <li><a href="#">서브노티카: 빌로우 제로</a></li>
+            <li><a href="#">서브노티카</a></li>
+            <li><a href="#">내추럴 셀렉션 2</a></li>
+            <li><a href="#">토이클래시</a></li>
+          </ul>
+          <ul class="sub_menu">
+            <li><a href="#">More Experience</a></li>
+            <li><a href="#">펍지 이스포츠</a></li>
+          </ul>
+          <ul class="sub_menu">
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">피플</a></li>
+            <li><a href="#">라이프</a></li>
+            <li><a href="#">채용공고</a></li>
+            <li><a href="#">자주 묻는 질문</a></li>
+          </ul>
+          <ul class="sub_menu">
+            <li><a href="#">IR</a></li>
+            <li><a href="#">기업지배구조</a></li>
+            <li><a href="#">공시정보</a></li>
+            <li><a href="#">주가정보</a></li>
+            <li><a href="#">재무정보</a></li>
+            <li><a href="#">IR 활동</a></li>
+            <li><a href="#">공고</a></li>
+          </ul>
+          <ul class="sub_menu">
+            <li><a href="#">News</a></li>
+            <li><a href="#">보도자료</a></li>
+          </ul>
+          <ul class="sub_menu"></ul>
+        </div>
+        <div class="site_lang">
+          <ul>
+            <li class="on"><a href="#">KO</a></li>
+            <li><a href="#">EN</a></li>
+            <li><a href="#">CN</a></li>
+            <li><a href="#">JP</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="visual">
+    <div class="container">
+      <div class="visual_box">
+        <div class="visual_bg">
+          <div class="video_item">
+            <video id="visual_video_1" poster autoplay loop muted playsinline src="https://www.krafton.com/wp-content/uploads/2021/06/video-005.mp4" type="video/mp4"></video>
+          </div>
+          <div class="video_item">
+            <video id="visual_video_2" poster autoplay loop muted playsinline src="https://www.krafton.com/wp-content/uploads/2021/06/video-007.mp4" type="video/mp4"></video>
+          </div>
+          <div class="box_bg">
+          </div>
+        </div>
+        <div class="visual_text">
+          <div class="v_text1">
+            <img src="images/create_text.jpg" alt="create">
+          </div>
+          <div class="v_text2">
+            <img src="images/the_text.jpg" alt="the">
+          </div>
+          <div class="v_text3">
+            <img src="images/original_txt.jpg" alt="original">
+          </div>
+          <div class="v_text4">
+            <img src="images/connect_txt.jpg" alt="connect">
+          </div>
+          <div class="v_text5">
+            <img src="images/world_text.jpg" alt="world">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="news_section">
+    <div class="site_container">
+      <h3>
+        <a href="#">News</a>  
+      </h3>
+      <div class="myswiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <img src="images/global.jpg" alt="">
+      <div class="news_text_wrap">
+        <h4>그라운드 모바일, 상반기 글로벌 대회 ‘2022 PMWI’ 개막</h4>
+        <span>2022. 08. 10</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="images/gamescom.jpg" alt="">
+      <div class="news_text_wrap">
+        <h4>그라운드 모바일, 상반기 글로벌 대회 ‘2022 PMWI’ 개막</h4>
+        <span>2022. 08. 10</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="images/officialweb.jpg" alt="">
+      <div class="news_text_wrap">
+        <h4>그라운드 모바일, 상반기 글로벌 대회 ‘2022 PMWI’ 개막</h4>
+        <span>2022. 08. 10</span>
+      </div>
+    </div>
+    ...
+  </div>
+
+</div>
+    </div>
+  </section>
+  <section id="career_section">
+    <div class="site_container">
+      <h3>Careers</h3>
+      <div class="myswiper2">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <img src="images/main_careers-580x220.png" alt="">
+      <div class="news_text_wrap">
+        <h4>그라운드 모바일, 상반기 글로벌 대회 ‘2022 PMWI’ 개막</h4>
+        <span>2022. 08. 10</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="images/main_jobs-580x220.png" alt="">
+      <div class="news_text_wrap">
+        <h4>그라운드 모바일, 상반기 글로벌 대회 ‘2022 PMWI’ 개막</h4>
+        <span>2022. 08. 10</span>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </section>
+  <section id="main_game">
+    <div class="site_container">
+      <h3>KRAFTON GAMES</h3>
+      <div class="myswiper3">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <img src="images/games-img1-min-580x389.png" alt="">
+      <div class="news_text_wrap">
+        <h4>그라운드 모바일, 상반기 글로벌 대회 ‘2022 PMWI’ 개막</h4>
+        <span>2022. 08. 10</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="images/games-img1-min-580x389.png" alt="">
+      <div class="news_text_wrap">
+        <h4>그라운드 모바일, 상반기 글로벌 대회 ‘2022 PMWI’ 개막</h4>
+        <span>2022. 08. 10</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="images/games-img1-min-580x389.png" alt="">
+      <div class="news_text_wrap">
+        <h4>그라운드 모바일, 상반기 글로벌 대회 ‘2022 PMWI’ 개막</h4>
+        <span>2022. 08. 10</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="images/games-img1-min-580x389.png" alt="">
+      <div class="news_text_wrap">
+        <h4>그라운드 모바일, 상반기 글로벌 대회 ‘2022 PMWI’ 개막</h4>
+        <span>2022. 08. 10</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="images/games-img1-min-580x389.png" alt="">
+      <div class="news_text_wrap">
+        <h4>그라운드 모바일, 상반기 글로벌 대회 ‘2022 PMWI’ 개막</h4>
+        <span>2022. 08. 10</span>
+      </div>
+    </div>
+  </div>
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>  
+  </div>
+    </div>
+  </section>
+  sectio
+</body>
+
+</html>

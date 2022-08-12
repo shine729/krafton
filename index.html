@@ -5,109 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <title>크래프톤</title>
 </head>
-<script>
-  $(document).ready(function(){
-      $('#header').mouseenter(function(){
-        $('#header').addClass('header_on');
-    })
-
-    $('#header').mouseleave(function(){
-      $('#header').removeClass('header_on');
-    })
-
-    $('#header .container .site_lang li').on('click',function(){
-      $('#header .container .site_lang li').removeClass('on');
-      $(this).addClass('on');
-    });
-
-    $('.mobile_btn').on('click',function(){
-      $('.nav').toggleClass('on');
-      $('.mobile_btn').toggleClass('on');
-    });
-
-    var swiper = new Swiper(".myswiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev'
-                    }
-      });
-
-      var swiper = new Swiper(".myswiper2", {
-        slidesPerView: 2,
-        spaceBetween: 30,
-        navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev'
-                    }
-      });
-
-       var swiper = new Swiper(".myswiper3", {
-        slidesPerView: 2,
-        spaceBetween: 30,
-        navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev'
-                    }
-      });
-      
-      $('.studio_box').mouseenter(function(){
-        $('.studio_box').removeClass('on');
-        $(this).addClass('on');
-      })
-      $('.studio_box').mouseleave(function(){
-        $(this).addClass('on');
-      });
-
-      $('.family_site').on('click',function(){
-        $('.family_site').toggleClass('on');
-      });
-
-  var animation = function () {
-  var items, winH;
-
-  var initModule = function () {
-    items = document.querySelectorAll("section>.site_container");
-    winH = window.innerHeight;
-    _addEventHandlers();
-  }
-
-  var _addEventHandlers = function () {
-    window.addEventListener("scroll", _checkPosition);
-    window.addEventListener("load", _checkPosition);
-    window.addEventListener("resize", initModule);
-  };
-
-  var _checkPosition = function () {
-    for (var i = 0; i < items.length; i++) {
-      var posFromTop = items[i].getBoundingClientRect().top;
-      if (winH > posFromTop) {
-        items[i].classList.add("active");
-      }
-      
-    }
-  }
-
-  return {
-    init: initModule
-  }
-}
-
-animation().init();
-
-
-
-  });
-  
-
-</script>
 <body>
   <header id="header">
     <div class="container clearfix">

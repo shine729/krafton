@@ -188,4 +188,44 @@ body.black header{background: #000;}
   .family_site>div>ul>li{margin-bottom: 5px;}
   .family_site>div>ul>li>a{color:#fff; font-size: 13px;}
   .family_site>*{color:#fff;}
+
+  @media (max-width:992px){
+    #visual .site_container{min-height: 153vw;}
+    #visual .site_container .visual_box{ height: 95vw; width:86vw; top:50%; left:50%; transform: translate(-50%,-50%);}
+    #visual .box_bg{position: absolute; top:0; left:0; background-size:100% 100%; background-image: url("../images/KeyVisual-mobile.png");
+      width:100%; height: 100%;}
+    .visual_text>div{height: 10vw;}
+    .visual_text .v_text1{width: 43vw;}
+    #visual .video_item:nth-child(1){height: 65%;}
+    #visual .video_item:nth-child(2){height: 35%;}
+    #visual_video_1{width: auto;}
+    #visual .visual_text>div>img{height: 10.6vw;}
+    #visual .visual_text{width:100%; height:100%; top:0; left:0; right:0; bottom:0;}
+    #visual .visual_text .v_text1 {
+      position: absolute;
+      top: 1%;
+      left: 2%;
+  }
+    #visual .visual_text .v_text2 {
+      position: absolute;
+      top: 18%;
+      left:2%;
+  }
+    #visual .visual_text .v_text3 {
+      position: absolute;
+      top: 18%;
+      right: 1%;
+  }
+
+    #visual .visual_text .v_text4 {
+      position: absolute;
+      bottom: 36%;
+      left: 2%;
+  }
+    #visual .visual_text .v_text5 {
+      position: absolute;
+      bottom: 1%;
+      right: 1%;
+  }
+  }
   

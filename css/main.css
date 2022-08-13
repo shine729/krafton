@@ -1,6 +1,8 @@
 .site_container{max-width:1280px; margin:0 auto; position: relative; padding: 0 40px;
   overflow: hidden;}
 .swiper-slide img{width:100%;}
+.box_pointer{cursor: pointer;}
+
 body.black{background: #000;}
 body.black #header{background: #000;}
 body.black #header .nav>ul>li>a{color:#fff;}
@@ -17,6 +19,10 @@ body.black #career_section .site_container.active h3{color:#fff;}
 body.black #header .nav.on{background: #000;}
 body.black .mobile_btn .menu_txt{color:#fff;}
 body.black .mobile_btn .line{background: #fff;}
+body.black #studio_section .studio_box .s_box_top span:after{display: inline-block;}
+body.black #studio_section .site_container h3{color:#fff;}
+body.black #studio_section .s_box_btm>*{color:#fff;}
+body.black #news_section .news_text_wrap h4>span{color:#fff;}
 
 #visual .site_container{height:100vh; position: relative; max-width: none; padding: 0;}
 #visual .site_container .visual_box{position: absolute; left: 4vw; right:4vw; height:30vw; top:50%; 
@@ -37,6 +43,34 @@ body.black .mobile_btn .line{background: #fff;}
   #visual .visual_text .v_text6{position: absolute; bottom: 0; right: 0; font-size: 0.3vw; line-height: 1.3vw;}
   #visual .box_bg{position: absolute; top:0; left:0; background-size:100% 100%; background-image: url("../images/visual_bg.png");
   width:100%; height: 100%;}
+  #visual .scroll_wrap{position: absolute; bottom:30px; right:60px; z-index: 1;}
+  #visual .scroll_wrap>span{float:left; }
+  #visual .scroll_wrap .scroll_text{background: url(../images/ico-scroll-text.png);  width:1.3vw; height: 3.6vw; background-size: 1.3vw 3.6vw; display: block;}
+  #visual .scroll_wrap .scroll_arrow{background: url(../images/ico-scroll-arrow.png); width:1.3vw; height: 3.6vw; background-size: 1.3vw 3.6vw; display: block;
+    animation-duration: 1.8s;
+    animation-name: ScrollArrow;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: translateY(-50px);
+    opacity: 0;}
+
+    @keyframes ScrollArrow{
+      0% {
+        transform: translateY(-30%);
+        opacity: 0;
+    }
+    5% {
+      transform: translateY(-30%);
+      opacity: 0;
+  }
+  70% {
+    opacity: 1;
+}
+100% {
+  transform: translateY(0);
+  opacity: 1;
+}
+    }
 
   #news_section{ margin-bottom: 88px; padding-top: 46px; overflow: hidden;}
   #news_section .swiper-slide{width:calc(100% / 3); position: relative;}
@@ -136,6 +170,8 @@ body.black .mobile_btn .line{background: #fff;}
   .studio_box .s_box_btm{padding-top:24px; border-top:1px solid #ddd;}
   .studio_box .s_box_btm h4{font-size: 24px; margin-bottom:10px;}
   .studio_box .s_box_btm p{font-size: 14px;}
+  #studio_section .s_arrow{width: 10px; height: 35px; background-image: url(../images/ico-scroll-arrow.png); background-size: 10px 35px; display: block; 
+  transform: rotate(-90deg); position: absolute; right: 80px; top: 10px; cursor: pointer;}
   .studio_box .s_box_top span{display: inline-block; position: relative; width: 83px; height: 60px;}
   #studio_section .studio_box .s_box_top span:before,#studio_section .studio_box .s_box_top span:after{position: absolute; top:0; left:0; display: none;}
   .studio_box:nth-of-type(1) .s_box_top span:before{content:''; background: url("../images/logo-pubg.png");
@@ -162,7 +198,7 @@ body.black .mobile_btn .line{background: #fff;}
   .studio_box:nth-of-type(4).on{background: #3dcfa8;}
   #studio_section .studio_box.on .s_box_top span:before{display: none;}
   #studio_section .studio_box .s_box_top span:before{display: inline-block;}
-  #studio_section .studio_box.on .s_box_top span:after{display: inline-block;}#footer .web_info>ul>li#footer .foot_bottom
+  #studio_section .studio_box.on .s_box_top span:after{display: inline-block;}
   #studio_section.studio_box .s_box_top span:after{display: none;}
   #studio_section h3{font-size: 40px; margin-bottom:36px;}
   #studio_section{padding-top: 110px; margin-bottom: 160px;}
@@ -276,6 +312,7 @@ body.black .mobile_btn .line{background: #fff;}
 
   @media (max-width:768px){
     #visual .site_container{min-height:auto; height: calc(100vh - 58px);}
+    #visual .scroll_wrap{display: none;}
   #news_section .swiper-slide{width:70%;}
   #news_section .news_text_wrap h4>span{background: none; font-size: 14px;}
   #news_section{padding-top: 0;}
@@ -286,7 +323,7 @@ body.black .mobile_btn .line{background: #fff;}
   #main_game h3{font-size: 28px; margin-bottom:0; padding-bottom: 20px;}
   #main_game .black_box>span{margin-top:5px; font-size: 13px;}
   #main_game .black_box{left: 10px; top:10px;}
-  #main_game .black_box:before{height: 30px;}
+  #main_game .black_box:before{height: 30px; left: -17px; width: 115px;}
   #main_game{padding: 50px 0 50px;}
   #career_section{margin-bottom: 35px;}
   #studio_section { padding-top: 35px; margin-bottom: 35px;} 
@@ -295,12 +332,16 @@ body.black .mobile_btn .line{background: #fff;}
   .studio_box{width:calc(100%/2); padding:34px 10px 19px; min-height: auto;}
   .studio_box:nth-of-type(1) .s_box_top span{width:63px; height: 40px;}
   .studio_box:nth-of-type(1) .s_box_top span:before{width:53px; height: 30px; background-size: 53px 30px;}
+  .studio_box:nth-of-type(1) .s_box_top span:after{width:53px; height: 30px; background-size: 53px 30px;}
   .studio_box:nth-of-type(2) .s_box_top span{width:40px; height: 40px;}
   .studio_box:nth-of-type(2) .s_box_top span:before{width:30px; height: 30px; background-size: 30px 30px;}
+  .studio_box:nth-of-type(2) .s_box_top span:after{width:30px; height: 30px; background-size: 30px 30px;}
   .studio_box:nth-of-type(3) .s_box_top span{width:63px; height: 40px;}
   .studio_box:nth-of-type(3) .s_box_top span:before{width:53px; height: 30px; background-size: 53px 30px;}
+  .studio_box:nth-of-type(3) .s_box_top span:after{width:53px; height: 30px; background-size: 53px 30px;}
   .studio_box:nth-of-type(4) .s_box_top span{width:142px; height: 45px;}
   .studio_box:nth-of-type(4) .s_box_top span:before{width:120px; height: 30px; background-size: 120px 30px;}
+  .studio_box:nth-of-type(4) .s_box_top span:after{width:120px; height: 30px; background-size: 120px 30px;}
   .studio_box:nth-of-type(4) .s_box_btm h4{margin-bottom:10px;}
   .studio_box .s_box_top{margin-bottom: 0; min-height: 50px;}
   .studio_box .s_box_btm h4 { font-size: 16px; margin-bottom: 25px; line-height:20px;}
@@ -339,5 +380,9 @@ body.black .mobile_btn .line{background: #fff;}
   .new_img_wrap>div{margin-bottom:20px;}
   #footer .sns_list>ul>li{margin-right:10px;}
   #footer .foot_top .web_info{width:100%;}
+  #main_game .swiper-button-prev{width: 30px; height: 10px; background-size: 30px 10px; top:-23px; right:20px;}
+  #main_game .swiper-button-next{width: 30px; height: 10px; background-size: 30px 10px; top:-23px; right:0;}
+  #main_game h4{bottom: 10px; left: 10px; font-size: 18px;}
+  #studio_section .s_arrow{right:50px;}
   }
   

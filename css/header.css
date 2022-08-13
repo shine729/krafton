@@ -10,30 +10,34 @@ ol,ul,li{list-style: none;}
 #header.header_on {border-bottom:1px solid #ddd;}
 #header.header_on .container>.header_inner>.nav_list{display: block!important; background: #fff;}
 #header .container{margin:0 auto; width:100%; height:100%; position: relative;}
-#header .logo{position: absolute; top:50%; left:65px; transform: translateY(-50%); }
+#header .logo{position: absolute; top:50%; left:4vw; transform: translateY(-50%); }
 #header .logo>a{display: block; width:120px; height:20px;}
 #header .logo>a>img{display: block; width:100%; height:100%;}
 #header .nav>ul>li,#header .site_lang>ul>li{float:left; position: relative;}
-#header .container .site_lang{position: absolute; right:65px; top:50%; transform: translateY(-50%);}
+#header .container .site_lang{position: absolute; right:4vw; top:50%; transform: translateY(-50%);}
 #header .container .site_lang li.on:hover a:before{display:none;}
 #header .container .site_lang li a:before{content:''; width:0; height:2px; background:#000; position: absolute; bottom: 0; left: 0;
   transition: width 0.5s;}
 #header .container .site_lang li:hover a:before{width:70%;}
 #header .container .site_lang li.on>a{font-weight: bold; color:#000}
 #header .container .site_lang>ul>li{margin-right:10px; padding-right: 10px; position: relative;}
+#header .container .site_lang>ul>li:last-child{margin-right:0; padding-right: 0;}
 #header .container .site_lang>ul>li:before{content:''; width:1px; height:10px; position: absolute; 
   top:50%; right:0; transform: translateY(-50%); background: #ddd;}
 #header .container .site_lang>ul>li>a{font-size: 13px; color: #A2A2A2; font-family: 'Poppins', sans-serif;}
 #header .container .nav{text-align: center;  width:100%; height:83px; line-height:83px;}
 #header .container .nav>ul{display: inline-block; }
-#header .container .nav>ul>li>a{font-size: 19px; padding: 31px 30px 29px; font-weight: 500;
+#header .container .nav>ul>li>a{font-size: 1.3vw; padding: 1.8vw 1.6vw 1.8vw; font-weight: 500;
   font-family: 'Poppins', sans-serif; position: relative;}
   #header .container .nav>ul>li>a:hover:before{content:''; width:100%; height:4px; background:#000; position: absolute; bottom: 0; left: 0;}
-#header .container .nav_list{width: 100%; height:calc(100vh - 60px); display: none!important;}
+#header .container .nav_list{width: 100%; height:calc(100vh - 60px); background-color: #fff; display: none!important;}
 #header .container .nav_list.clearfix::after{content:''; display: block; }
 #header .container .nav_list .sub_menu{float:left; width: calc(100%/9); height:100%; border:1px solid #ddd; border-top: none; padding:20px 10px;}
-#header .container .nav_list .sub_menu>li:first-child{font-weight: bold; font-size: 16px;}
-#header .container .nav_list .sub_menu>li{margin-bottom:10px; font-size: 14px; color:#777;}
+#header .container .nav_list .sub_menu>li:first-child{font-weight: bold; font-size: 1.3vw; margin-bottom:20px; color:#000;}
+#header .container .nav_list .sub_menu>li{margin-bottom:10px; font-size: 0.9vw; }
+#header .container .nav_list .sub_menu>li>a{color:#888;}
+#header .container .nav_list .sub_menu>li:first-child>a{color:#000;}
+
 
 @media (max-width:1024px){
   .only_pc{display: none!important;}
@@ -60,4 +64,32 @@ ol,ul,li{list-style: none;}
   #header.header_on .container>.header_inner>.nav_list.only_pc{display: none!important;}
   #header .container .site_lang>ul>li{margin-right:15px;}
   #header .container .site_lang>ul>li>a{font-size: 20px;}
+}
+
+@media (max-width:768px){
+  #header{height: auto;}
+  #header .logo {width: 105px; height: 18px;}
+  .mobile_btn{right:20px; font-size: 21px;}
+  .mobile_btn .menu_txt{padding-right: 33px;}
+  .mobile_btn .line:nth-of-type(2) {
+    width: 20px;
+    height: 2px;
+    top: 12px;
+    right: 0;
+}
+.mobile_btn .line:nth-of-type(3) {
+  width: 25px;
+  height: 2px;
+  top: initial;
+  bottom: 3px;
+  right: -5px;
+}
+#header .container .site_lang{right:50px;}
+#header .container .site_lang>ul>li>a{font-size: 14px;}
+#header .container .site_lang>ul>li:last-child:before{display: none;}
+.header_inner {padding: 20px 20px;}
+#header.header_on{border-bottom: none;}
+#header .container .nav{top:58px; left:0;}
+#header .container .nav ul li>a{font-size: 25px;}
+#header .nav>ul>li{padding: 10px}
 }

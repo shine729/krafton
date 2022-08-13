@@ -8,12 +8,16 @@ $(document).ready(function(){
                 },
                 breakpoints: {
         
-          375: {
-            slidesPerView: "auto",  //브라우저가 768보다 클 때
+          360: {
+            slidesPerView: "auto", 
             spaceBetween: 30,
           },
-          992: {
-            slidesPerView: 3,  //브라우저가 1024보다 클 때
+          768: {
+            slidesPerView: "auto", 
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,  
             spaceBetween: 50,
           },
         },
@@ -28,12 +32,15 @@ $(document).ready(function(){
                 },
                 breakpoints: {
         
-          375: {
+          360: {
             slidesPerView: "auto",  //브라우저가 375보다 클 때
             spaceBetween: 30,
           },
-
-          992: {
+          768: {
+            slidesPerView: "auto", 
+            spaceBetween: 30,
+          },
+          1024: {
             slidesPerView: 2,  //브라우저가 1024보다 클 때
             spaceBetween: 50,
           },
@@ -49,12 +56,15 @@ $(document).ready(function(){
                 } ,
                   breakpoints: {
         
-                  375: {
+                  360: {
                     slidesPerView: "auto",  //브라우저가 375보다 클 때
                     spaceBetween: 30,
                   },
-        
-                  992: {
+                  768: {
+                    slidesPerView: "auto", 
+                    spaceBetween: 30,
+                  },
+                  1024: {
                     slidesPerView: 2,  //브라우저가 1024보다 클 때
                     spaceBetween: 50,
                   },

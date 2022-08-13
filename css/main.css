@@ -153,7 +153,7 @@ body.black header{background: #000;}
   #studio_section{padding-top: 110px; margin-bottom: 160px;}
   #studio_section .site_container h3{opacity: 0; transition-property: transform,opacity; transition-duration: 0.6s; transform: translateY(101%);}
   #studio_section .site_container.active h3{opacity: 1;  transform: translateY(0%);}
-  #studio_section .site_container .studio_box_wrap{opacity: 0; transition-property:transform,opacity; transition-duration: 1.2s;}
+  #studio_section .site_container .studio_box_wrap{opacity: 0; transition-property:transform,opacity; transition-duration: 1.2s; float:left;}
   #studio_section .site_container.active .studio_box_wrap{opacity: 1;}
 
   #footer{background: #000;  padding: 35px 0 63px;}
@@ -190,9 +190,13 @@ body.black header{background: #000;}
   .family_site>div>ul>li>a{color:#fff; font-size: 13px;}
   .family_site>*{color:#fff;}
 
-  @media (max-width:992px){
-    .site_container{padding: 0 30px;}
-    #visual .site_container{min-height: 153vw;}
+  @media (max-width:1024px){
+    .site_container{padding: 0 20px;}
+    #main_game{padding: 60px 0 60px;}
+    #main_game .swiper-slide{width: calc(55% + 20px);}
+    #career_section { margin-bottom: 40px; }
+    #studio_section { padding-top: 40px;}
+    #visual .site_container{min-height: 135vw;}
     #visual .site_container .visual_box{ height: 95vw; width:86vw; top:50%; left:50%; transform: translate(-50%,-50%);}
     #visual .box_bg{position: absolute; top:0; left:0; background-size:100% 100%; background-image: url("../images/KeyVisual-mobile.png");
       width:100%; height: 100%;}
@@ -230,9 +234,32 @@ body.black header{background: #000;}
       right: 1%;
   }
   #visual .visual_text .v_text6{display: none;}
+  #news_section .news_text_wrap h4>span{font-size: 20px;}
+  .studio_box{padding: 40px 20px 20px;}
+  .studio_box .s_box_top{margin-bottom:40px;}
+  .studio_box .s_box_btm p{font-size: 14px; line-height: 25px;}
+  .studio_box .s_box_btm h4{font-size: 20px;}
+  .career_text_wrap{min-height: 110px;}
+  #news_section h3{font-size: 45px;}
+  #career_section h3{font-size: 45px;}
+  #main_game h3{font-size: 60px;}
+  #studio_section h3{font-size: 45px;}
+  #footer .foot_bottom{padding-top: 55px;}
+  #footer .footer_container{padding: 0 25px;}
+  #footer .foot_logo>a {width: 110px; height: 15px; background-size: 110px 15px;}
+  .family_site>span{font-size: 18px;}
+  .family_site{width:260px;}
+  .family_site>div>ul>li{margin-bottom: 10px;}
+  .family_site>div>ul>li>a{font-size: 15px;}
+  .family_site>div{padding: 15px;}
+  .family_site>div{width:260px;}
+  }
 
+  @media (max-width:768px){
+    #visual .site_container{min-height: 153vw;}
   #news_section .swiper-slide{width:70%;}
   #news_section .news_text_wrap h4>span{background: none;}
+  
   #career_section .swiper-slide{width:80%; padding: 0;}
   .career_text_wrap h4:after{display: none;}
   #main_game .swiper-slide{width:95%; padding-left: 25px; padding-right:0;}

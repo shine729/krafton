@@ -35,16 +35,17 @@ ol,ul,li{list-style: none;}
 #header .container .nav_list .sub_menu>li:first-child{font-weight: bold; font-size: 16px;}
 #header .container .nav_list .sub_menu>li{margin-bottom:10px; font-size: 14px; color:#777;}
 
-@media (max-width:992px){
+@media (max-width:1024px){
   .only_pc{display: none!important;}
   .only_mobile{display: block!important;}
   #header .logo{position: static; transform: none; width:143px; height:23px;}
   #header .logo>a{width: 100%; height: 100%;}
   #header .container{position: static;}
+  #header .container .nav ul li>a{font-size: 65px; font-weight: bold;  padding: 0;}
+  #header .container .nav>ul{width:100%;}
   .header_inner{padding: 30px 20px;}
   #header .container .nav{display: none; height: auto; line-height: normal; position: absolute; top:83px;
   height: calc(100vh - 83px); overflow-y: auto; padding: 30px 10px;}
-  #header .container .nav ul li>a{font-size: 35px; padding: 0;}
   #header .nav.on{display: block; background: #fff;}
   #header .nav>ul>li{width:100%; text-align: left; padding: 15px 0;}
   #header .container .nav>ul>li>a:hover:before{display: none;}

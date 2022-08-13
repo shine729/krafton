@@ -48,12 +48,15 @@ ol,ul,li{list-style: none;}
   #header .nav.on{display: block; background: #fff;}
   #header .nav>ul>li{width:100%; text-align: left; padding: 15px 0;}
   #header .container .nav>ul>li>a:hover:before{display: none;}
-  .mobile_btn{position: absolute; right:30px; top:50%; transform: translateY(-50%); font-size: 30px;} 
-  .mobile_btn.on .menu_txt{display: none; }
+  .mobile_btn{position: absolute; right:30px; top:50%; transform: translateY(-50%); font-size: 30px; cursor: pointer;} 
+  .mobile_btn.on .menu_txt{opacity: 0; }
   .mobile_btn .menu_txt{padding-right: 44px;}
   .mobile_btn ~ .site_lang{display: none;}
   .mobile_btn.on ~ .site_lang{display: block;}
-  .mobile_btn .line{ display: inline-block; width:30px; height:2px; background: #000; position: absolute; top:15px; right:0;}
-  .mobile_btn .line:nth-child(2){position: absolute; top:initial; bottom:7px; width:35px; right:-5px; }
+  .mobile_btn .line{background: #000; display: inline-block; position: absolute;}
+  .mobile_btn .line:nth-of-type(2){ width:30px; height:2px; top:15px; right:0;}
+  .mobile_btn .line:nth-of-type(3){ width:35px; height:2px; top:initial; bottom:7px; right:-5px; }
   #header.header_on .container>.header_inner>.nav_list.only_pc{display: none!important;}
+  #header .container .site_lang>ul>li{margin-right:15px;}
+  #header .container .site_lang>ul>li>a{font-size: 20px;}
 }

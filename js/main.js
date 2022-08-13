@@ -5,7 +5,18 @@ $(document).ready(function(){
     navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev'
-                }
+                },
+                breakpoints: {
+        
+          375: {
+            slidesPerView: "auto",  //브라우저가 768보다 클 때
+            spaceBetween: 30,
+          },
+          992: {
+            slidesPerView: 3,  //브라우저가 1024보다 클 때
+            spaceBetween: 50,
+          },
+        },
   });
 
   var swiper = new Swiper(".myswiper2", {
@@ -14,7 +25,19 @@ $(document).ready(function(){
     navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev'
-                }
+                },
+                breakpoints: {
+        
+          375: {
+            slidesPerView: "auto",  //브라우저가 375보다 클 때
+            spaceBetween: 30,
+          },
+
+          992: {
+            slidesPerView: 2,  //브라우저가 1024보다 클 때
+            spaceBetween: 50,
+          },
+        },
   });
 
    var swiper = new Swiper(".myswiper3", {
@@ -23,7 +46,19 @@ $(document).ready(function(){
     navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev'
-                }
+                } ,
+                  breakpoints: {
+        
+                  375: {
+                    slidesPerView: "auto",  //브라우저가 375보다 클 때
+                    spaceBetween: 30,
+                  },
+        
+                  992: {
+                    slidesPerView: 2,  //브라우저가 1024보다 클 때
+                    spaceBetween: 50,
+                  },
+                },
   });
   
   $('#header').mouseenter(function(){
@@ -44,17 +79,23 @@ $('.mobile_btn').on('click',function(){
   $('.mobile_btn').toggleClass('on');
 });
   
-  $('.studio_box').mouseenter(function(){
-    $('.studio_box').removeClass('on');
-    $(this).addClass('on');
-  })
-  $('.studio_box').mouseleave(function(){
-    $(this).addClass('on');
-  });
 
   $('.family_site').on('click',function(){
     $('.family_site').toggleClass('on');
   });
+
+  var width_size = window.outerWidth;
+  if(width_size>992){
+    $('.studio_box').mouseenter(function(){
+      $('.studio_box').removeClass('on');
+      $(this).addClass('on');
+    })
+    $('.studio_box').mouseleave(function(){
+      $(this).addClass('on');
+    });
+  }else{
+    $('.studio_box').removeClass('on');
+  }
 
 var animation = function () {
 var items, winH;

@@ -20,6 +20,7 @@ body.black header{background: #000;}
   #visual .visual_text .v_text3{position: absolute; top:25%; right:0;}
   #visual .visual_text .v_text4{position: absolute; bottom:25%; left:0;}
   #visual .visual_text .v_text5{position: absolute; bottom:0; right:19%;}
+  #visual .visual_text .v_text6{position: absolute; bottom: 0; right: 0; font-size: 11px; line-height: 20px;}
   #visual .box_bg{position: absolute; top:0; left:0; background-size:100% 100%; background-image: url("../images/visual_bg.png");
   width:100%; height: 100%;}
 
@@ -29,7 +30,7 @@ body.black header{background: #000;}
   #news_section .swiper-slide:hover .news_text_wrap h4>span{background-size: 100% 2px;}
   #news_section .news_text_wrap h4{margin-bottom:20px;}
   #news_section .news_text_wrap h4>span{font-size: 24px; font-weight: bold; margin-bottom: 18px;
-    font-weight: 500;
+    font-weight: bold;
     background-image: linear-gradient(#000,#000);
     background-position: left bottom;
     background-size: 0% 2px;
@@ -190,6 +191,7 @@ body.black header{background: #000;}
   .family_site>*{color:#fff;}
 
   @media (max-width:992px){
+    .site_container{padding: 0 30px;}
     #visual .site_container{min-height: 153vw;}
     #visual .site_container .visual_box{ height: 95vw; width:86vw; top:50%; left:50%; transform: translate(-50%,-50%);}
     #visual .box_bg{position: absolute; top:0; left:0; background-size:100% 100%; background-image: url("../images/KeyVisual-mobile.png");
@@ -227,5 +229,65 @@ body.black header{background: #000;}
       bottom: 1%;
       right: 1%;
   }
+  #visual .visual_text .v_text6{display: none;}
+
+  #news_section .swiper-slide{width:70%;}
+  #news_section .news_text_wrap h4>span{background: none;}
+  #career_section .swiper-slide{width:80%; padding: 0;}
+  .career_text_wrap h4:after{display: none;}
+  #main_game .swiper-slide{width:95%; padding-left: 25px; padding-right:0;}
+  #main_game h3{font-size: 40px;}
+  #main_game .black_box>span{margin-top:10px;}
+  #main_game .black_box{left: 30px;}
+  #main_game .black_box:before{height: 40px;}
+  #main_game{padding: 50px 0 50px;}
+  #career_section{margin-bottom: 35px;}
+  #studio_section { padding-top: 35px; margin-bottom: 35px;}
+
+  #studio_section h3 { font-size: 40px; margin-bottom: 15px;}
+  .studio_box{width:calc(100%/2); padding:34px 15px 19px; min-height: 289px;}
+  .studio_box:nth-of-type(1) .s_box_top span{width:63px; height: 40px;}
+  .studio_box:nth-of-type(1) .s_box_top span:before{width:63px; height: 40px; background-size: 63px 40px;}
+  .studio_box:nth-of-type(2) .s_box_top span{width:40px; height: 40px;}
+  .studio_box:nth-of-type(2) .s_box_top span:before{width:40px; height: 40px; background-size: 40px 40px;}
+  .studio_box:nth-of-type(3) .s_box_top span{width:63px; height: 40px;}
+  .studio_box:nth-of-type(3) .s_box_top span:before{width:63px; height: 40px; background-size: 63px 40px;}
+  .studio_box:nth-of-type(4) .s_box_top span{width:142px; height: 45px;}
+  .studio_box:nth-of-type(4) .s_box_top span:before{width:142px; height: 45px; background-size: 142px 45px;}
+  .studio_box:nth-of-type(4) .s_box_btm h4{margin-bottom:10px;}
+  .studio_box .s_box_top{margin-bottom: 22px; min-height: 50px;}
+  .studio_box .s_box_btm h4 { font-size: 22px; margin-bottom: 35px; line-height:25px;}
+  .studio_box .s_box_btm{padding-top: 15px;}
+
+  #footer{padding: 30px 0 50px;}
+  #footer,#footer .footer_container{float:left;}
+  #footer .footer_container{padding: 0 30px;}
+  #footer .web_info>ul>li>a{font-size: 15px;}
+  #footer .foot_top .web_info {padding-bottom: 20px; border-bottom: 1px solid #999;}
+  #footer .foot_top .sns_list { float: left; margin-top: 30px;}
+  .family_site{position:relative; width:100%;}
+  #footer .foot_bottom{padding-top: 0; border:none;}
+  .family_site{margin-bottom:30px;}
+  .family_site>span{font-size: 25px;}
+  #footer .foot_top{margin-top:30px; margin-bottom:45px}
+  #footer .foot_logo>a{display: none;}
+  #footer .foot_bottom .family_site>span:after{width:25px; height:25px;}
+  .family_site>div{width:100%;}
+  .family_site.on>div{bottom:60px}
+  #footer .foot_logo>span{font-size: 15px;}
+
+  #footer .sns_list>ul>li:nth-of-type(1)>a{width:15px; height:25px; background-size: 15px 25px;}
+  #footer .sns_list>ul>li:nth-of-type(2)>a {width: 35px; height: 25px; background-size: 35px 25px;}
+  #footer .sns_list>ul>li:nth-of-type(3)>a {width: 42px; height: 30px; background-size: 42px 30px;}
+  #footer .sns_list>ul>li:nth-of-type(4)>a {width: 25px; height: 25px; background-size: 25px 25px;}
+  #footer .sns_list>ul>li:nth-of-type(5)>a {width: 28px; height: 28px; background-size: 28px 28px;}
+  #footer .sns_list>ul>li:nth-of-type(6)>a {width: 28px; height: 28px; background-size: 28px 28px;}
+  .family_site>div>ul>li{margin-bottom:10px;}
+  .family_site>div>ul>li>a{font-size: 18px; font-weight: bold;}
+
+  #news_section .news_text_wrap h4>span{font-size:20px;}
+  #news_section .news_text_wrap h4{margin-bottom: 15px;}
+  #news_section .news_text_wrap>span{color:#888;}
+  .new_img_wrap>div{margin-bottom:20px;}
   }
   

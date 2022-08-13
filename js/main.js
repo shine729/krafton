@@ -125,20 +125,28 @@ window.addEventListener("resize", initModule);
 var _checkPosition = function () {
 for (var i = 0; i < items.length; i++) {
   var posFromTop = items[i].getBoundingClientRect().top;
+  var itemgame = items[3].getBoundingClientRect().top;
   if (winH > posFromTop) {
     items[i].classList.add("active");
   }
-  
-}
+
+
+  if (winH > itemgame) {
+    $('.body').addClass('black');
+    if(0 > itemgame){
+      $('.body').removeClass('black');
+    }
+  }else{
+    $('.body').removeClass('black');
+  }
 }
 
-return {
-init: initModule
 }
+
+return {init: initModule}
 }
 
 animation().init();
-
 
 
 });

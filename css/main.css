@@ -2,7 +2,21 @@
   overflow: hidden;}
 .swiper-slide img{width:100%;}
 body.black{background: #000;}
-body.black header{background: #000;}
+body.black #header{background: #000;}
+body.black #header .nav>ul>li>a{color:#fff;}
+body.black #header .container .site_lang li.on>a{color:#fff;}
+body.black #header .logo>a{background-image: url("../images/logo-white.png");}
+body.black #header.header_on .container .nav_list{background: #000;}
+body.black #header.header_on .container .nav_list .sub_menu>li:first-child>a{color:#fff;}
+body.black #header.header_on .container .nav_list .sub_menu{border-right: 0.2px solid #555;
+border-left:none}
+body.black #header.header_on{border-bottom: 0.2px solid #555;}
+body.black #main_game .site_container.active h3{color:#fff;}
+body.black .career_text_wrap>*{color:#fff;}
+body.black #career_section .site_container.active h3{color:#fff;}
+body.black #header .nav.on{background: #000;}
+body.black .mobile_btn .menu_txt{color:#fff;}
+body.black .mobile_btn .line{background: #fff;}
 
 #visual .site_container{height:100vh; position: relative; max-width: none; padding: 0;}
 #visual .site_container .visual_box{position: absolute; left: 4vw; right:4vw; height:30vw; top:50%; 
@@ -88,7 +102,8 @@ body.black header{background: #000;}
     float: left;
     cursor: pointer;
     top: -50px;
-    right: 100px;}
+    left:auto;
+    right: 120px;}
     .swiper-button-next:after,.swiper-button-prev:after{display: none;}
   #main_game .swiper-button-next{  width: 50px; height: 18px;
     background-image: url(../images/ico-main-slide-right.png);

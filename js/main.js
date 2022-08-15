@@ -87,6 +87,7 @@ $('#header .container .site_lang li').on('click',function(){
 $('.mobile_btn').on('click',function(){
   $('.nav').toggleClass('on');
   $('.mobile_btn').toggleClass('on');
+  $('.mobile_header_menu').toggleClass('on');
 });
   
 

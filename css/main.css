@@ -23,6 +23,7 @@ body.black #studio_section .site_container h3{color:#fff;}
 body.black #studio_section .s_box_btm>*{color:#fff;}
 body.black #news_section .news_text_wrap h4>span{color:#fff;}
 body.black .mobile_bg>div{background: #000;}
+body.black .mobile_header_menu .nav ul li>a{color:#fff;}
 
 #visual .site_container{height:100vh; position: relative; max-width: none; padding: 0;}
 #visual .site_container .visual_box{position: absolute; left: 4vw; right:4vw; height:30vw; top:50%; 

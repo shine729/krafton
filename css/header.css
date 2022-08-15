@@ -110,5 +110,6 @@ ol,ul,li{list-style: none;}
 .mobile_header_menu .nav{top:0; left:0; height: calc(100vh - 65px); }
 .mobile_header_menu .nav ul li>a{font-size: 25px;}
 .mobile_header_menu .nav>ul>li{padding: 10px}
+#header.navbar-down{transform: translateY(0%);}
 
 }

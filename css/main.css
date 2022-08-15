@@ -16,13 +16,13 @@ body.black #header.header_on{border-bottom: 0.2px solid #555;}
 body.black #main_game .site_container.active h3{color:#fff;}
 body.black .career_text_wrap>*{color:#fff;}
 body.black #career_section .site_container.active h3{color:#fff;}
-body.black #header .nav.on{background: #000;}
 body.black .mobile_btn .menu_txt{color:#fff;}
 body.black .mobile_btn .line{background: #fff;}
 body.black #studio_section .studio_box .s_box_top span:after{display: inline-block;}
 body.black #studio_section .site_container h3{color:#fff;}
 body.black #studio_section .s_box_btm>*{color:#fff;}
 body.black #news_section .news_text_wrap h4>span{color:#fff;}
+body.black .mobile_bg>div{background: #000;}
 
 #visual .site_container{height:100vh; position: relative; max-width: none; padding: 0;}
 #visual .site_container .visual_box{position: absolute; left: 4vw; right:4vw; height:30vw; top:50%; 

@@ -2,10 +2,6 @@ $(document).ready(function(){
   var swiper = new Swiper(".myswiper", {
     slidesPerView: 3,
     spaceBetween: 30,
-    navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev'
-                },
                 breakpoints: {
         
           360: {
@@ -26,10 +22,6 @@ $(document).ready(function(){
   var swiper = new Swiper(".myswiper2", {
     slidesPerView: 2,
     spaceBetween: 30,
-    navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev'
-                },
                 breakpoints: {
         
           360: {
